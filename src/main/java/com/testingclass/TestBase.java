@@ -15,7 +15,7 @@ public class TestBase {
 
 	}
 
-	//@AfterMethod
+	@AfterMethod
 
 	public void tearDown() {
 		Keyword.driver.close();

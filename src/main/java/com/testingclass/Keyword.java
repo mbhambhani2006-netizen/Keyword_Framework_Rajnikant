@@ -30,7 +30,7 @@ public class Keyword {
 			throw new InvalidBrowserName(browserName);
 		}
 		wait=new FluentWait<WebDriver>(driver);
-		wait.withTimeout(Duration.ofSeconds(15));
+		wait.withTimeout(Duration.ofSeconds(20));
 		wait.pollingEvery(Duration.ofMillis(500));
 		wait.ignoring(NoSuchElementException.class);
 
